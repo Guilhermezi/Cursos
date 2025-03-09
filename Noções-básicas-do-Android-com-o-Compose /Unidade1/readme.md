@@ -1,4 +1,4 @@
-# Primeiro App em Kotlin 📱
+# Primeiros Apps em Kotlin 📱
 
 Este repositório contém apenas o **arquivo Kotlin principal** do aplicativo.
 
