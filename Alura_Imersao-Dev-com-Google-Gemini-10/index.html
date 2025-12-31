@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autopedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="brand">AUTOPEDIA <span>CLUB</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Pagina inicial</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Centro de conhecimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="breadcrumb">Pagina inicial / Tutoriais</p>
+            <h1>Manuais de reparacao e tutoriais em video</h1>
+            <p class="hero-subtitle">Faca manutencao e reparos com guias claros e fontes confiaveis.</p>
+            <div class="search-panel">
+                <select id="marca-select">
+                    <option value="">Marca (todas)</option>
+                </select>
+                <select id="modelo-select">
+                    <option value="">Modelo (todos)</option>
+                </select>
+                <select id="ano-select">
+                    <option value="">Ano (todos)</option>
+                </select>
+                <input id="termo-input" type="text" placeholder="Peca ou palavra-chave">
+                <button id="botao-busca" type="button" onclick="iniciarBusca()">Pesquisar</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="content">
+        <section class="results">
+            <h3 class="section-title">Resultados</h3>
+            <div id="resultados" class="cards-grid"></div>
+        </section>
+
+        <section class="categories">
+            <h3 class="section-title">Guias rapidos por peca</h3>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-brake-fill"></i></div>
+                    <p>Pastilhas de travao</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-brake-line"></i></div>
+                    <p>Discos de travao</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-steering-2-line"></i></div>
+                    <p>Rolamento da roda</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-links-line"></i></div>
+                    <p>Correia trapezoidal</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-flashlight-line"></i></div>
+                    <p>Vela de ignicao</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-windy-line"></i></div>
+                    <p>Escovas do limpa vidros</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-oil-line"></i></div>
+                    <p>Filtro de combustivel</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="ri-tools-line"></i></div>
+                    <p>Braco de suspensao</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 class="footer-title">Fontes de manuais</h3>
+                <ul class="footer-sources">
+                    <li><a href="https://www.manualslib.com" target="_blank" rel="noreferrer">ManualsLib</a></li>
+                    <li><a href="https://www.manualscat.com" target="_blank" rel="noreferrer">ManualsCat</a></li>
+                    <li><a href="https://club.auto-doc.pt/manuals" target="_blank" rel="noreferrer">Auto-Doc Manuals</a></li>
+                    <li><a href="https://www.nhtsa.gov/vehicle/" target="_blank" rel="noreferrer">NHTSA Manuals</a></li>
+                    <li><a href="https://haynes.com/en-gb/online-manuals" target="_blank" rel="noreferrer">Haynes Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Redes</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Guilhermezi" target="_blank"><i class="ri-github-fill"></i></a></li>
+                    <li><a href="https://www.instagram.com/guilherme_izidio1/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/guilherme-izidio-nogueira-7ab1ab370/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Contato & Info</h3>
+                <ul class="footer-sources">
+                    <li><a href="mailto:contato@autopedia.dev">contato@autopedia.dev</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+                <p class="footer-meta">Autopedia &copy; 2025 — Conteúdo de manuais em links oficiais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

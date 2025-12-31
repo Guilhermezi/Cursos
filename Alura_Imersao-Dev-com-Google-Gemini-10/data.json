@@ -1,0 +1,186 @@
+[
+  {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": 2022,
+    "descricao": "Sedan medio 2.0 ou hibrido 1.8; manual do proprietario, manutencao e torque specs.",
+    "tags": ["motor", "manutencao", "corolla", "2.0", "hibrido"],
+    "linkManual": "https://manuals.toyota.com/"
+  },
+  {
+    "marca": "Honda",
+    "modelo": "Civic",
+    "ano": 2021,
+    "descricao": "Sedan 1.5 turbo; calendario de revisoes, torque e conectividade.",
+    "tags": ["turbo", "motor", "revisao", "civic"],
+    "linkManual": "https://owners.honda.com/vehicle-information/manuals"
+  },
+  {
+    "marca": "Volkswagen",
+    "modelo": "Golf",
+    "ano": 2020,
+    "descricao": "Hatch medio 1.4 TSI; eletrica, painel e pressao de pneus.",
+    "tags": ["tsi", "golf", "motor", "painel"],
+    "linkManual": "https://www.vw.com/owners-resources/manuals"
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Onix",
+    "ano": 2022,
+    "descricao": "Hatch compacto turbo; fluidos, conectividade e revisoes.",
+    "tags": ["onix", "turbo", "motor", "fluido"],
+    "linkManual": "https://www.chevrolet.com/support/vehicle/manuals"
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Ranger",
+    "ano": 2023,
+    "descricao": "Picape media diesel; capacidades de carga, 4x4 e manutencao.",
+    "tags": ["diesel", "4x4", "motor", "ranger"],
+    "linkManual": "https://www.ford.com/support/vehicle/manuals/"
+  },
+  {
+    "marca": "Hyundai",
+    "modelo": "HB20",
+    "ano": 2022,
+    "descricao": "Hatch 1.0/1.6; planos de manutencao, conectividade e torque.",
+    "tags": ["hb20", "motor", "revisao", "1.0", "1.6"],
+    "linkManual": "https://owners.hyundaiusa.com/content/myhyundai/us/en/resources/manuals-warranty.html"
+  },
+  {
+    "marca": "Renault",
+    "modelo": "Duster",
+    "ano": 2021,
+    "descricao": "SUV 1.3 turbo; manual, torque, pneus e modos off-road.",
+    "tags": ["duster", "turbo", "motor", "off-road"],
+    "linkManual": "https://www.renault.com.br/servicos/pos-venda.html"
+  },
+  {
+    "marca": "Fiat",
+    "modelo": "Pulse",
+    "ano": 2023,
+    "descricao": "SUV compacto turbo 200; conectividade, revisoes e pneus.",
+    "tags": ["pulse", "turbo", "motor", "revisao"],
+    "linkManual": "https://www.fiat.com.br/pos-venda/manuals.html"
+  },
+  {
+    "marca": "Nissan",
+    "modelo": "Kicks",
+    "ano": 2022,
+    "descricao": "SUV 1.6; consumo, conectividade e plano de manutencao.",
+    "tags": ["kicks", "motor", "1.6", "manutencao"],
+    "linkManual": "https://www.nissanusa.com/owners/ownership/manuals-guides.html"
+  },
+  {
+    "marca": "Jeep",
+    "modelo": "Compass",
+    "ano": 2022,
+    "descricao": "SUV 1.3 turbo; modos 4x4, torque e revisoes.",
+    "tags": ["compass", "turbo", "4x4", "motor"],
+    "linkManual": "https://www.jeep.com/owners/manuals.html"
+  },
+  {
+    "marca": "BMW",
+    "modelo": "320i",
+    "ano": 2021,
+    "descricao": "Sedan 2.0 turbo; tecnologias de assistencia e manutencao.",
+    "tags": ["320i", "turbo", "motor", "revisao"],
+    "linkManual": "https://www.bmwusa.com/owners-manuals.html"
+  },
+  {
+    "marca": "Mercedes-Benz",
+    "modelo": "C200",
+    "ano": 2022,
+    "descricao": "Sedan 1.5 turbo mild hybrid; eletrica, infotainment e servicos.",
+    "tags": ["c200", "turbo", "motor", "hibrido"],
+    "linkManual": "https://www.mercedes-benz.com/en/vehicles/service-parts/owner-manuals/"
+  },
+  {
+    "marca": "Audi",
+    "modelo": "A3",
+    "ano": 2022,
+    "descricao": "Hatch/sedan 2.0 TFSI; conectividade, torque e revisoes.",
+    "tags": ["a3", "tfsi", "motor", "revisao"],
+    "linkManual": "https://www.audiusa.com/us/web/en/owners/owner-manuals.html"
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Hilux",
+    "ano": 2023,
+    "descricao": "Picape diesel 2.8; capacidades, 4x4 e manutencao.",
+    "tags": ["hilux", "diesel", "4x4", "motor"],
+    "linkManual": "https://manuals.toyota.com/"
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "S10",
+    "ano": 2023,
+    "descricao": "Picape diesel; carga, 4x4 e plano de revisoes.",
+    "tags": ["s10", "diesel", "4x4", "motor"],
+    "linkManual": "https://www.chevrolet.com/support/vehicle/manuals"
+  },
+  {
+    "marca": "Kia",
+    "modelo": "Sportage",
+    "ano": 2023,
+    "descricao": "SUV 1.6 turbo hibrido leve; conectividade e manutencao programada.",
+    "tags": ["kia", "sportage", "turbo", "hibrido", "motor"],
+    "linkManual": "https://owners.kia.com/content/owners/en/manuals.html"
+  },
+  {
+    "marca": "Mazda",
+    "modelo": "CX-5",
+    "ano": 2022,
+    "descricao": "SUV 2.5 aspirado/turbo; guias de manutencao e torque.",
+    "tags": ["mazda", "cx-5", "motor", "revisao", "torque"],
+    "linkManual": "https://www.mazdausa.com/owners/service-maintenance/manuals"
+  },
+  {
+    "marca": "Subaru",
+    "modelo": "Forester",
+    "ano": 2022,
+    "descricao": "SUV boxer AWD; modos X-Mode e plano de revisoes.",
+    "tags": ["subaru", "forester", "awd", "motor", "boxer"],
+    "linkManual": "https://www.subaru.com/owners/owner-resources/owners-manuals.html"
+  },
+  {
+    "marca": "Volvo",
+    "modelo": "XC60",
+    "ano": 2023,
+    "descricao": "SUV hibrido T8; assistentes ADAS e manutencao.",
+    "tags": ["volvo", "xc60", "hibrido", "adas", "motor"],
+    "linkManual": "https://www.volvocars.com/pt/support/manuals"
+  },
+  {
+    "marca": "Peugeot",
+    "modelo": "3008",
+    "ano": 2022,
+    "descricao": "SUV 1.6 turbo; info de conectividade e revisoes.",
+    "tags": ["peugeot", "3008", "turbo", "motor", "revisao"],
+    "linkManual": "https://www.peugeot.pt/pos-venda/manual-do-proprietario.html"
+  },
+  {
+    "marca": "Land Rover",
+    "modelo": "Discovery Sport",
+    "ano": 2022,
+    "descricao": "SUV AWD; capacidades off-road, revisoes e eletrica.",
+    "tags": ["land rover", "discovery", "awd", "motor", "off-road"],
+    "linkManual": "https://www.landrover.com/ownership/guides-and-manuals/index.html"
+  },
+  {
+    "marca": "Mitsubishi",
+    "modelo": "Outlander",
+    "ano": 2023,
+    "descricao": "SUV hibrido plug-in; modos EV/HEV e manutencao.",
+    "tags": ["mitsubishi", "outlander", "hibrido", "phev", "motor"],
+    "linkManual": "https://www.mitsubishicars.com/owners/support/manuals"
+  },
+  {
+    "marca": "Tesla",
+    "modelo": "Model 3",
+    "ano": 2023,
+    "descricao": "Sedan eletrico; manual digital, carregamento e software.",
+    "tags": ["tesla", "model 3", "eletrico", "bateria", "manual"],
+    "linkManual": "https://www.tesla.com/ownersmanual"
+  }
+]
