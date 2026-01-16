@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Cheerful Holiday';
+            src: url('fonts/Cheerful Holiday.otf') format('opentype'), 
+                 url('fonts/Cheerful Holiday.ttf') format('truetype');
+                 font-weight: normal;
+                 font-style: normal;
+        }
+        /* tipos de formatos()
+           - opentype (.otf)
+           - truetype (.ttf)
+           -embedded opentype (.eot)
+           -truetype-aat (apple advanced typography)
+           -svg
+        */
+        body {
+            font-family: 'Cheerful Holiday', cursive;
+        }
+        h1 {
+            font-family: 'Cheerful Holiday', cursive;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi odit impedit a error consectetur necessitatibus eum repellendus mollitia minus repellat recusandae blanditiis consequuntur nesciunt excepturi, explicabo sunt magnam dolores minima.</p>
+</body>
+</html>
