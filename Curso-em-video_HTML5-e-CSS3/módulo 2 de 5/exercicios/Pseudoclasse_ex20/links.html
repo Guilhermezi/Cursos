@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(246, 175, 175);
+        }
+
+        a::after {
+            content: " (clique aqui)";
+            font-size: 12px;
+            font-weight: normal;
+            color: gray;
+        }
+
+        .especial::before {
+            content: ">> ";
+            font-size: 12px;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Liks</h1>
+    <ul>
+        <li><a href="https://github.com/Guilhermezi" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-izidio-nogueira-7ab1ab370/" target="_blank">linkedin</a></li>
+        <li><a href="https://coddy.tech/user/Guiz" target="_blank">coddy</a></li>
+    </ul>
+</body>
+</html>
