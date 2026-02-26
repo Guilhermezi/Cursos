@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: lightgray;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        nav {
+            background-color: lightgreen;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            width: 40%;
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        main {
+            background-color: lightblue;
+            height: 600px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        article {
+            background-color: lightgoldenrodyellow;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        article > aside {
+            background-color: lightcoral;
+            display: inline-block;;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            height: 100px;
+            padding: 1px;
+            margin: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">quem somos</a>
+            <a href="#">serviços</a>
+            <a href="#">portfolio</a>
+            <a href="#">contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi vel delectus omnis consequatur provident doloremque laudantium dolores architecto nemo suscipit, corporis vero aut iusto facilis necessitatibus blanditiis veniam itaque?</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex harum tenetur, nulla, accusantium et dolorem aliquam vitae odio dolor enim libero delectus hic aperiam quas voluptatum soluta consequuntur assumenda quos!</p>
+                
+                <aside>
+                    <p>Artigo escrito por zé</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+</body>
+</html>
