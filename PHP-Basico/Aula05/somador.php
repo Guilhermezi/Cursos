@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Aula05/_css/estilo.css">
+    <link rel="stylesheet" href="_css/estilo.css">
 </head>
 <body>
 <div>
     <?php
-    $n = 4;
-    $no = (string)"Gustavo\n";
-    echo $no;
+    $n1 = 3;
+    $n2 = 2;
+    $s = $n1 + $n2;
+    echo "A soma entre $n1 e $n2 e igual a $s";
 
     $nome = "Guilherme";
     $idade = 17;
