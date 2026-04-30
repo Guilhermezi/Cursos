@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcoes Aritimetricas em PHP</title>
-    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="../Aula06/_css/estilo.css">
     <style>
         h2 {
             font: 12pt Arial;

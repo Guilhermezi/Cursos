@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,10 @@
 <body>
 <div>
     <?php
-    $n1 = 3;
-    $n2 = 2;
-    $s = $n1 + $n2;
-    echo "A soma entre $n1 e $n2 e igual a $s";
-
-    $nome = "Guilherme";
-    $idade = 17;
-    echo $nome." tem ".$idade." anos";
-    echo "$nome tem $idade anos";
-
+    $x = "abc";
+    $$x = "def";
+    echo "O conteudo da variavel x é $x";
+    echo "<br> A variavel ABC recebeu o valor $abc";
     ?>
 </div>
 </body>
