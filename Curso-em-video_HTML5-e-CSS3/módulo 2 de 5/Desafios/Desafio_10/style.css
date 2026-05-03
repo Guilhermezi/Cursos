@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* Estilo simples inspirado no desafio do Android */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(to bottom, #3BD27F, #1A5C38);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 10px 20px 10px;
+    font-size: 1.1em;
+}
+
+/* Menu */
+nav {
+    background-color: #1A5C38;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #C5EBD6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: white;
+}
+
+/* Conteúdo principal */
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2 {
+    color: #1A5C38;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    background-image: linear-gradient(to right, #C5EBD6, transparent);
+    font-size: 1.8em;
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+}
+
+/* Links */
+a {
+    color: #1A5C38;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imagens */
+picture img,
+main img {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+main img[src*="bugdroid"] {
+    max-width: 350px;
+}
+
+/* Vídeo */
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 20px auto;
+    background-color: #1A5C38;
+}
+
+/* Lista */
+ul {
+    margin: 15px 0 15px 25px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
