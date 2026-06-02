@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* Estilo simples inspirado no desafio do Android */
+/* Ele falou do root, eu sei usar mas quero usar não, já está meio que pronto */
 
 * {
     margin: 0;
@@ -37,7 +38,7 @@ header p {
 
 /* Menu */
 nav {
-    background-color: #1A5C38;
+    color: white;
     padding: 10px;
     text-align: left;
 }
@@ -58,6 +59,10 @@ nav li:hover {
     color: white;
 }
 
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
 /* Conteúdo principal */
 main {
     background-color: white;
