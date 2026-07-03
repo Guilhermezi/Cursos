@@ -1,0 +1,202 @@
+@keyframes piscar {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+h1 {
+    animation: piscar 1s infinite alternate;
+}
+
+body {
+    background: rgb(107, 107, 241);
+    font: normal 1.5dvh Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+/* =========================================
+   CARD PRINCIPAL
+========================================= */
+
+section {
+
+    /* Permite posicionar elementos absolutos
+       (::before e ::after) usando o section
+       como referência */
+    position: relative;
+
+    /* Fundo interno do card */
+    background: white;
+
+    /* Arredonda os cantos */
+    border-radius: 8px;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Largura fixa */
+    width: 300px;
+
+    /* Centraliza horizontalmente */
+    margin: auto;
+
+    /* Esconde qualquer parte que ultrapasse
+       os limites do section */
+    overflow: hidden;
+
+    /* Define a camada do section */
+    z-index: 1;
+}
+
+
+
+/* =========================================
+   CAMADA DO GRADIENTE GIRANDO
+========================================= */
+
+section::before {
+
+    /* Obrigatório para pseudo-elementos */
+    content: '';
+
+    /* Permite posicionamento livre */
+    position: absolute;
+
+
+    /* Move o pseudo-elemento para cima */
+    top: -50%;
+
+    /* Move o pseudo-elemento para esquerda */
+    left: -50%;
+
+
+    /* Faz o gradiente ficar gigante */
+    width: 200%;
+
+    /* Altura gigante para cobrir tudo
+       durante a rotação */
+    height: 200%;
+
+
+    /* Cria o gradiente colorido */
+    background: linear-gradient(
+
+        /* Ângulo inicial */
+        0deg,
+
+        /* Cores do gradiente */
+        rgb(232, 107, 241),
+        rgb(221, 87, 87),
+        rgb(120, 107, 241),
+        rgb(130, 221, 87),
+
+        /* Repetição da primeira cor para
+           suavizar o loop */
+        rgb(232, 107, 241)
+    );
+
+
+    /* Aplica a animação */
+    animation: girar 4s linear infinite;
+
+    /* Coloca atrás do conteúdo */
+    z-index: -2;
+}
+
+
+
+/* =========================================
+   CAMADA BRANCA INTERNA
+========================================= */
+
+section::after {
+
+    /* Obrigatório */
+    content: '';
+
+    /* Posicionamento absoluto */
+    position: absolute;
+
+
+    /* Cria um espaçamento interno de 6px
+       em todos os lados */
+    inset: 6px;
+
+
+    /* Fundo branco do conteúdo */
+    background: white;
+
+    /* Mantém os cantos arredondados */
+    border-radius: 8px;
+
+
+    /* Fica acima do gradiente,
+       mas atrás do conteúdo */
+    z-index: -1;
+}
+
+
+
+/* =========================================
+   ANIMAÇÃO
+========================================= */
+
+@keyframes girar {
+
+    /* Estado final da animação */
+    100% {
+
+        /* Rotaciona 360 graus */
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="button"] {
+    background: rgb(107, 107, 241);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+
+    transition: 0.5s ease;
+}
+
+input[type="button"]:hover {
+    /* transition: translateY(-5px); */
+    /* transform: rotate(8deg); */
+    transform: scale(0.98);
+    background: rgb(87, 87, 221);
+}
+
+input[type="number"] {
+    display: block;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
