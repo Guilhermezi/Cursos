@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-/* Estilo simples inspirado no desafio do Android */
-/* Ele falou do root, eu sei usar mas quero usar não, já está meio que pronto */
+:root {
+    --cor1: #C5EBD6;
+    --cor2: #84E1AD;
+    --cor3: #3BD27F;
+    --cor4: #1A5C38;
+    --cor5: #0F3A22;
+}
 
 * {
     margin: 0;
@@ -10,14 +15,18 @@
 }
 
 body {
-    background-color: #84E1AD;
+    background-color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
+a.externo::after {
+    content: '\00a0🔗';
+}
+
 /* Header */
 header {
-    background-image: linear-gradient(to bottom, #3BD27F, #1A5C38);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     color: white;
     text-align: center;
     padding-top: 30px;
@@ -40,7 +49,7 @@ header p {
 nav {
     color: white;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 nav ul {
@@ -50,7 +59,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 15px;
-    color: #C5EBD6;
+    color: var(--cor1);
     font-weight: bold;
     cursor: pointer;
 }
@@ -63,6 +72,7 @@ nav a {
     color: inherit;
     text-decoration: none;
 }
+
 /* Conteúdo principal */
 main {
     background-color: white;
@@ -77,10 +87,10 @@ main {
 }
 
 main h2 {
-    color: #1A5C38;
+    color: var(--cor4);
     margin-bottom: 15px;
     padding: 8px 10px;
-    background-image: linear-gradient(to right, #C5EBD6, transparent);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     font-size: 1.8em;
 }
 
@@ -93,7 +103,7 @@ main p {
 
 /* Links */
 a {
-    color: #1A5C38;
+    color: var(--cor4);
     font-weight: bold;
     text-decoration: none;
 }
@@ -121,7 +131,30 @@ iframe {
     max-width: 800px;
     height: 450px;
     margin: 20px auto;
-    background-color: #1A5C38;
+    background-color: var(--cor4);
+    border: none;
+}
+
+/* Aside */
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.279);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
 /* Lista */
@@ -131,4 +164,39 @@ ul {
 
 ul li {
     margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    main h2 {
+        font-size: 1.4em;
+    }
+
+    iframe {
+        height: 250px;
+    }
 }
