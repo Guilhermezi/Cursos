@@ -19,11 +19,22 @@ public class Aula04Operadores {
         boolean isDezIgualVinte = 10 == 20;
         boolean isDezIgualDez = 10 == 10;
         boolean isDezDiferenteDez = 10 != 10;
+
         System.out.println("isDezMaiorQueVinte "+isDezMaiorQueVinte);
         System.out.println("isDezMenorQueVinte "+isDezMaiorQueVinte);
         System.out.println("isDezIgualVinte "+isDezIgualVinte);
         System.out.println("isDezIgualDez "+isDezIgualDez);
         System.out.println("isDezDiferenteDez "+isDezDiferenteDez);
+
+        // && (AND) || (OR) ! (NOT)
+
+        int age = 35;
+        float salary = 3500F;
+        boolean isIntoTheLawGreaterThanThirty = age >= 30 && salary >= 4612;
+        boolean isIntoTheLawLessThanThirty = age < 30 && salary >= 3381;
+
+        System.out.println("isIntoTheLawGreaterThanThirty"+isIntoTheLawGreaterThanThirty);
+        System.out.println("isIntoTheLawLessThanThirty"+isIntoTheLawLessThanThirty);
 
     }
 }
