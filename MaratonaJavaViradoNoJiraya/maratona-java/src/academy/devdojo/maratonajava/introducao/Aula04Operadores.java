@@ -36,5 +36,28 @@ public class Aula04Operadores {
         System.out.println("isIntoTheLawGreaterThanThirty"+isIntoTheLawGreaterThanThirty);
         System.out.println("isIntoTheLawLessThanThirty"+isIntoTheLawLessThanThirty);
 
+
+        double currentAcount = 200;
+        double savingsAcount = 10000;
+        float pricePlay = 5000F;
+        boolean isPlaystationFiveBuy = currentAcount > pricePlay || savingsAcount > pricePlay;
+        System.out.println("isPlaystationFiveBuy"+isPlaystationFiveBuy);
+
+        // = += -= *= /= %=
+        double bonus = 1000;
+        bonus += 1000;
+        System.out.println(bonus);
+
+        //
+        int count = 0;
+        count += 1;
+        count++;
+        count--;
+        ++count;
+        --count;
+        int count2 = 0;
+        System.out.println(count);
+        System.out.println(count2++);
+        System.out.println(++count2);
     }
 }
