@@ -1,6 +1,9 @@
 <?php
-echo '<h1>Arquivo index</h1>';
-echo "Texto dentro de aspas duplas";
+//Arquivo index responsável pela inicialização do sistema
 
-print 'Texto usando aspas simples';
-print "Aspas duplas";
+
+include 'configuracao.php';
+require_once 'Helpers.php';
+
+echo '<h1>Arquivo index</h1>';
+
