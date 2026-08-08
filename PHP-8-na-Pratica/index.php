@@ -5,5 +5,6 @@
 include 'configuracao.php';
 require_once 'Helpers.php';
 
-echo '<h1>Arquivo index</h1>';
-
+echo saudacao();
+echo "<br>";
+echo resumirTexto();
