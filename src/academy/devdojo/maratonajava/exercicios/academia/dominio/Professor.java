@@ -16,6 +16,10 @@ public class Professor {
         this.quantidadeAlunos = quantidadeAlunos;
     }
 
+    public Professor() {
+
+    }
+
     public double calculoSalario() {
         this.salario = this.preco * this.quantidadeAlunos;
         return this.salario;
@@ -29,5 +33,45 @@ public class Professor {
         System.out.println("Salario: " + calculoSalario());
         System.out.println("Especialidade: " + this.especialidade);
         System.out.println("Quantidade da alunos: " + this.quantidadeAlunos);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    public int getQuantidadeAlunos() {
+        return quantidadeAlunos;
+    }
+
+    public void setQuantidadeAlunos(int quantidadeAlunos) {
+        this.quantidadeAlunos = quantidadeAlunos;
     }
 }

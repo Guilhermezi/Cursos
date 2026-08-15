@@ -7,33 +7,27 @@ public class Aluno {
     private double altura;
     private double IMC;
     private String status;
-    private int notas[];
+    private char plano;
+    private double desconto;
+    private int[] notas;
 
-    public Aluno(String nome, int idade, double peso, double altura, String status, int notas) {
+    public Aluno(String nome, int idade, double peso, double altura, char plano, String status, int[] notas) {
         this();
         this.nome = nome;
         this.idade = idade;
         this.peso = peso;
         this.altura = altura;
+        this.plano = plano;
         this.status = status;
-        this.notas = new int[]{notas};
+        this.notas = notas;
     }
 
     public Aluno() {
-        System.out.println("Mais um aluno satisfeito!!!");
     }
 
     public double calculoIMC() {
         IMC = this.peso / Math.pow(this.altura, 2);
         return IMC;
-    }
-
-    public double mediaNotas(int ...nota) {
-        int soma = 0;
-        for (int n : nota) {
-            soma += n;
-        }
-        return (double) soma / nota.length;
     }
 
     public String calculoIMC(Double IMC) {
@@ -52,15 +46,42 @@ public class Aluno {
         }
     }
 
-    public void imprimir(){
+    public double mediaNotas() {
+        double soma = 0;
+        if(notas.length > 0){
+            for (int nota : notas) {
+                soma += nota;
+            }
+        }else {
+            return 0;
+        }
+        return soma / notas.length;
+    }
+
+    public void imprimir() {
         System.out.println("---------Aluno-----------");
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
         System.out.println("Peso: " + this.peso);
         System.out.println("Altura: " + this.altura);
+        System.out.println("Plano: " + this.plano);
+        System.out.println("Desconto: " + getDesconto());
         System.out.println("IMC: " + calculoIMC());
+        System.out.println("Status IMC: " + calculoIMC(this.IMC));
         System.out.println("Status: " + this.status);
-        System.out.println("Nota: " + this.notas);
+        for (int nota : this.notas) {
+            if (nota == 0) {
+                System.out.println("Você não merece processamento");
+                break;
+            }
+            if (nota < 5) {
+                System.out.print("Nota vergonhosa; ");
+                continue;
+            }
+            System.out.print("Nota: " + nota + "; ");
+        }
+        System.out.println();
+        System.out.println("Media arredondada: " + (int) mediaNotas());
     }
 
     public String getNome() {
@@ -76,7 +97,7 @@ public class Aluno {
     }
 
     public void setIdade(int idade) {
-        if (idade < 12){
+        if (idade < 12) {
             System.out.println("Idade invalida");
             return;
         }
@@ -107,11 +128,34 @@ public class Aluno {
         this.status = status;
     }
 
-    public int getNotas() {
+    public char getPlano() {
+        return plano;
+    }
+
+    public void setPlano(char plano) {
+        switch (plano) {
+            case 'B': System.out.println("Plano Básico - R$100"); break;
+            case 'I': System.out.println("Plano Intermediário - R$150"); break;
+            case 'A': System.out.println("Plano Avançado - R$200"); break;
+            default:  System.out.println("Plano inválido");
+        }
+        this.plano = plano;
+    }
+
+    public double getDesconto() {
+        desconto = getIdade() < 13 ? 0.10 : 0.0;
+        return desconto;
+    }
+
+    public void setDesconto(double desconto) {
+        this.desconto = desconto;
+    }
+
+    public int[] getNotas() {
         return notas;
     }
 
-    public void setNotas(int notas) {
+    public void setNotas(int[] notas) {
         this.notas = notas;
     }
 }
